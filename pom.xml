@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+  ~ Opennaru, Inc. http://www.opennaru.com/
+  ~
+  ~  Copyright (C) 2014 Opennaru, Inc. and/or its affiliates.
+  ~  All rights reserved by Opennaru, Inc.
+  ~
+  ~  This is free software; you can redistribute it and/or modify it
+  ~  under the terms of the GNU Lesser General Public License as
+  ~  published by the Free Software Foundation; either version 2.1 of
+  ~  the License, or (at your option) any later version.
+  ~
+  ~  This software is distributed in the hope that it will be useful,
+  ~  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+  ~  Lesser General Public License for more details.
+  ~
+  ~  You should have received a copy of the GNU Lesser General Public
+  ~  License along with this software; if not, write to the Free
+  ~  Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
+  ~  02110-1301 USA, or see the FSF site: http://www.fsf.org.
+  -->
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.opennaru.khan</groupId>
+    <artifactId>khan-session-sample</artifactId>
+    <version>1.3.0</version>
+
+    <name>KHAN [session manager]</name>
+    <description>Builds the complete KHAN [session manager] distribution modules</description>
+    <packaging>pom</packaging>
+
+    <scm>
+        <connection>scm:git:https://github.com/opennaru-dev/khan-session-sample.git</connection>
+        <url>https://github.com/opennaru-dev/khan-session.git</url>
+    </scm>
+
+    <modules>
+        <module>khan-session-hc-sample1</module>
+        <module>khan-session-redis-sample1</module>
+        <module>khan-session-sample1</module>
+    </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <infinispan.version>6.0.2.Final</infinispan.version>
+        <khan.session.version>1.3.0</khan.session.version>
+    </properties>
+
+</project>
