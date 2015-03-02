@@ -45,7 +45,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jboss.version>3.0.0.Final</jboss.version>
 		<jboss.as.version>7.2.0.Final</jboss.as.version>
-        <infinispan.version>6.1.1.Final-redhat-5</infinispan.version>
+        <infinispan.version>7.1.1.Final</infinispan.version>
     </properties>
 		
 	<dependencies>
