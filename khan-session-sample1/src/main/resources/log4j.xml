@@ -9,7 +9,16 @@
                    value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n" />
         </layout>
     </appender>
-
+    <appender name="FILE" class="org.apache.log4j.FileAppender">
+       <param name="file" value="./log.out"/>
+       <param name="immediateFlush" value="true"/>
+       <param name="threshold" value="debug"/>
+       <param name="append" value="false"/>
+       <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+                   value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n" />
+        </layout>
+    </appender>
     <category name="com.jcabi.manifests" additivity="false">
         <level value="WARN"/>
     </category>
@@ -17,6 +26,7 @@
     <root>
         <level value="INFO" />
         <appender-ref ref="console" />
+        <appender-ref ref="FILE" />
     </root>
 
 </log4j:configuration>
